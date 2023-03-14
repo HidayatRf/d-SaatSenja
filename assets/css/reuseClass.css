@@ -1,0 +1,11 @@
+.capital {
+	text-transform: capitalize;
+}
+
+.upperC {
+	text-transform: uppercase;
+}
+
+.transition-35 {
+	transition: .35s ease-in-out;
+}
