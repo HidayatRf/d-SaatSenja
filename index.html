@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
+
 	<!-- my css -->
 	<link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="./assets/css/screen.css">
 	<link rel="stylesheet" href="./assets/css/reuseClass.css">
-	
-	
+
+	<!-- font awesome icon -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
 	<!-- fonts.google -->
-	
+
 	<title>D'saatSenjaCoffe</title>
 </head>
+
 <body>
-	
+
 	<div class="container">
 		<!-- navbar -->
 		<nav class="navbar">
 			<h3>
-				d'SaatSenja
+				d'SaatSenja<span>Coffee</span>
 			</h3>
 			<button class="openNavLink" type="button">
-				(o)
+				<i class="fa-solid fa-bars"></i>
 			</button>
 			<div class="navLink transition-35">
-				<a href="#none" class="link upperC">home</a>
-				<a href="#none" class="link upperC">about us</a>
-				<a href="#none" class="link upperC">our menu</a>
-				<a href="#none" class="link upperC">location</a>
-				<a href="#none" class="link upperC">contact us</a>
+				<a href="#" class="link upperC transition-35">home</a>
+				<a href="#about-us" class="link upperC transition-35">about us</a>
+				<a href="#menu" class="link upperC transition-35">our menu</a>
+				<a href="#location" class="link upperC transition-35">location</a>
+				<a href="#contact-us" class="link upperC transition-35">contact us</a>
 			</div>
 		</nav>
 		<!-- end navbar -->
-		
+
 		<!-- hero -->
 		<section class="hero">
 			<div class="info">
@@ -45,7 +49,7 @@
 				<p class="capital">
 					Lorem ipsum dolor sit amet,
 					<span>consectetur adipisicing</span> elit. Veniam, vel.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
 					Deserunt, fugit!
 				</p>
 				<button type="submit" class="cta transition-35">
@@ -56,7 +60,7 @@
 			</div>
 		</section>
 		<!-- end hero -->
-		
+
 		<!-- about -->
 		<section class="about" id="about-us">
 			<div class="wrapper">
@@ -64,13 +68,19 @@
 					<img src="./assets/img/about-us.jpg" alt="about-us">
 					<div class="info">
 						<h3 class="upperC">
-							about us
+							<span>about</span> us
 						</h3>
 						<p class="capital">
-							Lorem ipsum dolor sit amet, consectetur adipisicing 
+							Lorem ipsum dolor sit amet, consectetur adipisicing
 							elit. Fugiat voluptatem iste sequi consequatur s
-							unt excepturi voluptatibus, ut aperiam officiis vitae 
+							unt excepturi voluptatibus, ut aperiam officiis vitae
 							aut similique distinctio repudiandae eligendi.
+						</p>
+						<p class="capital">
+							Lorem ipsum dolor sit amet, consectetur adipisicing
+							elit. Fugiat voluptatem iste sequi consequatur s
+							unt excepturi voluptatibus, ut aperiam officiis vitae
+
 						</p>
 						<button type="button">
 							<a href="#contact-us" class="link capital">
@@ -82,10 +92,13 @@
 			</div>
 		</section>
 		<!-- end about -->
-		
+
 		<!-- menu -->
-		<section class="menus">
+		<section class="menus" id="menu">
 			<div class="wrapper">
+				<h3 class="capital">
+					our popular <span>menu</span>
+				</h3>
 				<div class="contents">
 					<div class="menu">
 						<img src="./assets/img/menu/americano.jpeg" alt="">
@@ -163,15 +176,12 @@
 			</div>
 		</section>
 		<!-- end menu -->
-		
+
 		<!-- location -->
 		<section class="location" id="location">
 			<div class="wrapper">
 				<img src="./assets/img/placeholder.jpg" alt="">
 				<div class="info">
-					<h2 clas="upperC">
-						location
-					</h2>
 					<p>
 						d'Saat<span>SenjaCoffee</span>
 					</p>
@@ -179,26 +189,74 @@
 			</div>
 		</section>
 		<!-- end location -->
-		
+
+		<!-- contact us -->
+		<section class="contact-us" id="contact-us">
+			<div class="wrapper">
+				<h3 class="upperC">
+					contact <span>us</span>
+				</h3>
+				<form method="post" action="">
+					<div class="user-name">
+						<label for="userName" class="capital">
+							user name
+						</label>
+						<input type="text" required id="userName">
+					</div>
+					<div class="user-email">
+						<label for="userEmail" class="capital">
+							your email
+						</label>
+						<input type="text" required id="userEmail">
+					</div>
+					<button type="submit" class="upperC send-message">
+						send it!
+					</button>
+					<textarea required class="input-message">
+
+					</textarea>
+				</form>
+			</div>
+		</section>
+		<!-- end contact us -->
+
 		<!-- footer -->
 		<footer>
 			<p class="capital">
-				created by 
-				<a href="" class="link github io" id="HidayatRf">
+				created by
+				<a href="HidayatRf.github.io" class="my-portofolio">
 					reza fairuz h
 				</a>
 				copyright &copy; 2020
 			</p>
+			<h3>
+				D'SaatSenjaCoffe
+			</h3>
 			<div class="media">
 				<h5 class="upperC">
 					follow me on:
 				</h5>
+				<div class="sosial-media">
+					<a href="">
+						<i class="fa-brands fa-instagram"></i>
+					</a>
+					<a href="">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+					<a href="">
+						<i class="fa-brands fa-facebook"></i>
+					</a>
+					<a href="">
+						<i class="fa-brands fa-github"></i>
+					</a>
+				</div>
 			</div>
 		</footer>
 		<!-- end footer -->
 	</div>
-	
-	
+
+
 	<script src="./main.js"></script>
 </body>
+
 </html>

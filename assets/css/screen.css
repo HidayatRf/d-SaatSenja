@@ -1,0 +1,144 @@
+@media (min-width: 640px) {
+
+	html,
+	body {
+		font-size: 20px;
+	}
+
+	.hero {
+		height: 75vh;
+	}
+
+	.about .wrapper .content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+	}
+
+	.about .wrapper .content .info p {
+		font-size: .9rem;
+	}
+
+	.menus img {
+		height: 230px;
+	}
+
+	.menus .wrapper .contents .menu .info {
+		row-gap: 13px;
+	}
+
+	.location .wrapper {
+		max-width: 85%;
+	}
+
+	.contact-us .wrapper {
+		padding: 0 1em;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+	html,
+	body {
+		font-size: 25px;
+	}
+
+	.menus .wrapper .contents {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.contact-us .wrapper form button {
+		margin: 1em 0;
+		padding: .5em 1.2em;
+	}
+
+}
+
+
+@media (min-width: 1024px) {
+	html {
+		font-size: 25px;
+	}
+
+	.navbar .openNavLink {
+		display: none;
+	}
+
+	.hero {
+		height: 100vh;
+		padding-bottom: 5rem;
+	}
+
+	.navbar .navLink {
+		width: 65%;
+		position: static;
+		align-items: center;
+		justify-content: space-evenly;
+		border-radius: 0;
+		display: flex;
+		height: 100%;
+	}
+
+	.navbar .navLink .link {
+		font-size: .75rem;
+	}
+
+
+	.about .wrapper .content {
+		column-gap: .8rem;
+	}
+}
+
+@media (min-width: 1280px) {
+
+	.about .wrapper .content {
+		padding-right: 4rem;
+		padding-left: 4rem;
+	}
+
+
+	.about .info {
+		row-gap: 20px;
+	}
+
+	.about .wrapper .content button {
+		margin-top: 1rem;
+	}
+
+
+	.menus .wrapper {
+		padding: 0 1.2rem;
+	}
+
+	.menus .wrapper .contents {
+		row-gap: 1.7rem;
+		column-gap: 1.4rem;
+		margin-top: 1.6rem;
+	}
+
+	.contact-us .wrapper form {
+		grid-template-areas:
+			"user-name input-message input-message"
+			"user-email input-message input-message"
+			"send-message input-message input-message"
+		;
+		justify-items: start;
+	}
+
+	.contact-us .wrapper form .user-name {
+		grid-area: user-name;
+	}
+
+	.contact-us .wrapper form .user-email {
+		grid-area: user-email;
+	}
+
+	.contact-us .wrapper form .input-message {
+		grid-area: input-message;
+	}
+
+	.contact-us .wrapper form .send-message {
+		grid-area: send-message;
+	}
+}
