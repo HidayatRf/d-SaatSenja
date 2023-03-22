@@ -25,6 +25,11 @@
 
 	.menus .wrapper .contents .menu .info {
 		row-gap: 13px;
+		justify-items: start;
+	}
+
+	.menus .wrapper .contents .menu .info a {
+	 padding: .5rem 1rem;
 	}
 
 	.location .wrapper {
@@ -70,6 +75,10 @@
 		padding-bottom: 5rem;
 	}
 
+  .hero .info {
+   max-width: 45%;
+  }
+
 	.navbar .navLink {
 		width: 65%;
 		position: static;
@@ -77,6 +86,7 @@
 		justify-content: space-evenly;
 		border-radius: 0;
 		display: flex;
+		background: transparent;
 		height: 100%;
 	}
 
@@ -88,10 +98,16 @@
 	.about .wrapper .content {
 		column-gap: .8rem;
 	}
+	
+	.contact-us .wrapper form {
+   row-gap: 1.4rem;
+  }
+	
+	
 }
 
 @media (min-width: 1280px) {
-
+  
 	.about .wrapper .content {
 		padding-right: 4rem;
 		padding-left: 4rem;
@@ -141,4 +157,30 @@
 	.contact-us .wrapper form .send-message {
 		grid-area: send-message;
 	}
+}
+
+@media (min-width: 1536px) {
+
+  html {
+   font-size: 30px;
+  }
+
+ .navbar {
+  padding: 1rem 0;
+ }
+ 
+ .navbar, 
+ .container section {
+  padding-left: 7.5%;
+  padding-right: 7.5%;
+ }
+ 
+ .about .wrapper .content .info h3 {
+  font-size: 1.3rem;
+ }
+ 
+ .menus .wrapper .contents .menu .info {
+  row-gap: 16px;
+ }
+ 
 }
